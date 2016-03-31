@@ -1,0 +1,23 @@
+This directory contains implementations of "Provably Secure Partially BLind Signatures" as presented by Abe and Okamoto in CRYPTO 2000.
+
+This code was written by Rob Jansen for the paper "Recruiting New Tor Relays with BRAIDS," which was presented at the Conference on Computer and Communications Security (CCS) in 2010. Is is released under the terms in CRAPL-LICENSE.txt.
+
+Contents:
+See Makefile for dependencies.
+
+benchmark.c 	Runs benchmarks on the AES and hashes used in Tor, and several implementations of the above signature scheme.
+
+pbs.c/h			OpenSSL standard implementation of Partially Blind Signatures (PBS)
+                http://www.openssl.org/
+
+mcl_ecpbs*.c/h	MIRACL elliptic curve implementation of PBS
+                https://github.com/CertiVox/MIRACL
+
+gmp_pbs*.c/h	GMP standard implementation of PBS
+                http://gmplib.org/
+
+gmp_ecpbs*.c/h	GMP elliptic curve implementation of PBS
+                http://gmplib.org/
+
+parser.py
+
